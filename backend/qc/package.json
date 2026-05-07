@@ -1,0 +1,25 @@
+{
+  "name": "viet-contech-qc",
+  "version": "0.1.0",
+  "description": "Viet-Contech AI Design Platform — 12 QC Gates Checkpoint System (NASA-grade V&V pyramid + TMR voting + auto-fix + escalation)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx tests/test-qc.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "hono": "^4.12.16"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

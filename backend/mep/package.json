@@ -1,0 +1,19 @@
+{
+  "name": "viet-contech-mep",
+  "version": "0.1.0",
+  "description": "MEP Smart Routing — Dijkstra electric, Hunter plumbing, Greedy Set Cover camera",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "tsx tests/test-routing.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

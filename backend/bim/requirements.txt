@@ -1,0 +1,22 @@
+# BIM module — Python dependencies
+# =================================
+# Cai dat: pip install -r requirements.txt
+#
+# Khi `ifcopenshell` khong cai duoc tren Windows, module tu fallback
+# sang JSON-IFC format (cung schema). API + logic giu nguyen.
+#
+# Khi `ezdxf` khong cai duoc, dung file `.dxf.json` fallback voi format
+# {"layers": {LAYER_NAME: [entities]}} — agent kien_truc_detail upstream
+# co the export ra dang nay tu DXF.
+
+# IFC core (optional — fallback to JSON-IFC if missing)
+ifcopenshell>=0.7.10
+
+# DXF parser (optional — fallback to JSON layers if missing)
+ezdxf>=1.3.0
+
+# Numeric helpers
+numpy>=1.26
+
+# Validation (dung cho input/output schema)
+pydantic>=2.0

@@ -1,0 +1,399 @@
+{
+  "dxf_file": "C:\\Users\\Admin\\Documents\\Viet-Contech\\platform\\backend\\boq\\samples\\sample-house-3T.dxf",
+  "units": "mm",
+  "total_floor_area_m2": 356.28,
+  "floors_detected": 3,
+  "bbox": {
+    "min_x": -0.15,
+    "min_y": -12.2,
+    "max_x": 8.2,
+    "max_y": 46.5,
+    "width": 8.35,
+    "depth": 58.7
+  },
+  "layers": {
+    "TUONG-220": {
+      "layer": "TUONG-220",
+      "entity_type": "wall",
+      "count": 0,
+      "length_m": 108.0,
+      "area_m2": 0.0,
+      "volume_m3": 64.152,
+      "handles": [
+        "A3",
+        "D4",
+        "105"
+      ],
+      "meta": {
+        "thickness_mm": 220.0,
+        "assumed_height_mm": 3000.0,
+        "door_window_deduction_m3": 7.128
+      }
+    },
+    "TUONG-100": {
+      "layer": "TUONG-100",
+      "entity_type": "wall",
+      "count": 0,
+      "length_m": 51.0,
+      "area_m2": 0.0,
+      "volume_m3": 13.77,
+      "handles": [
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "106",
+        "107",
+        "108",
+        "109"
+      ],
+      "meta": {
+        "thickness_mm": 100.0,
+        "assumed_height_mm": 3000.0,
+        "door_window_deduction_m3": 1.53
+      }
+    },
+    "COT-200X300": {
+      "layer": "COT-200X300",
+      "entity_type": "column",
+      "count": 18,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 3.78,
+      "handles": [
+        "A8",
+        "A9",
+        "AA",
+        "AB",
+        "AC",
+        "AD",
+        "D9",
+        "DA",
+        "DB",
+        "DC",
+        "DD",
+        "DE",
+        "10A",
+        "10B",
+        "10C",
+        "10D",
+        "10E",
+        "10F"
+      ],
+      "meta": {
+        "section_w_mm": 200.0,
+        "section_d_mm": 300.0,
+        "assumed_height_m": 3.5
+      }
+    },
+    "DAM-220X400": {
+      "layer": "DAM-220X400",
+      "entity_type": "beam",
+      "count": 0,
+      "length_m": 132.0,
+      "area_m2": 0.0,
+      "volume_m3": 11.616,
+      "handles": [
+        "AE",
+        "AF",
+        "DF",
+        "E0",
+        "110",
+        "111"
+      ],
+      "meta": {
+        "section_w_mm": 220.0,
+        "section_d_mm": 400.0
+      }
+    },
+    "SAN-BTCT-150": {
+      "layer": "SAN-BTCT-150",
+      "entity_type": "slab",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 240.0,
+      "volume_m3": 36.0,
+      "handles": [
+        "B0",
+        "E1",
+        "112"
+      ],
+      "meta": {
+        "thickness_mm": 150.0
+      }
+    },
+    "CUA-DI": {
+      "layer": "CUA-DI",
+      "entity_type": "door",
+      "count": 12,
+      "length_m": 0.0,
+      "area_m2": 23.76,
+      "volume_m3": 0.0,
+      "handles": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "113",
+        "114",
+        "115",
+        "116"
+      ],
+      "meta": {}
+    },
+    "CUA-SO": {
+      "layer": "CUA-SO",
+      "entity_type": "window",
+      "count": 15,
+      "length_m": 0.0,
+      "area_m2": 25.2,
+      "volume_m3": 0.0,
+      "handles": [
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "E6",
+        "E7",
+        "E8",
+        "E9",
+        "EA",
+        "117",
+        "118",
+        "119",
+        "11A",
+        "11B"
+      ],
+      "meta": {}
+    },
+    "GACH-LAT-SAN": {
+      "layer": "GACH-LAT-SAN",
+      "entity_type": "slab",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 116.28,
+      "volume_m3": 17.442,
+      "handles": [
+        "BA",
+        "EB",
+        "11C"
+      ],
+      "meta": {
+        "thickness_mm": 150.0
+      }
+    },
+    "GACH-OP-WC": {
+      "layer": "GACH-OP-WC",
+      "entity_type": "wall_tile",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 18.75,
+      "volume_m3": 0.0,
+      "handles": [
+        "BB",
+        "EC",
+        "11D"
+      ],
+      "meta": {}
+    },
+    "SON-TUONG": {
+      "layer": "SON-TUONG",
+      "entity_type": "wall",
+      "count": 0,
+      "length_m": 108.0,
+      "area_m2": 0.0,
+      "volume_m3": 64.152,
+      "handles": [
+        "BC",
+        "ED",
+        "11E"
+      ],
+      "meta": {
+        "thickness_mm": 220.0,
+        "assumed_height_mm": 3000.0,
+        "door_window_deduction_m3": 7.128
+      }
+    },
+    "TRAN-THACH-CAO": {
+      "layer": "TRAN-THACH-CAO",
+      "entity_type": "ceiling",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 218.88,
+      "volume_m3": 0.0,
+      "handles": [
+        "BD",
+        "EE",
+        "11F"
+      ],
+      "meta": {}
+    },
+    "DEN-LED-TRAN": {
+      "layer": "DEN-LED-TRAN",
+      "entity_type": "ceiling",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "BE",
+        "BF",
+        "C0",
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "EF",
+        "F0",
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "120",
+        "121",
+        "122",
+        "123"
+      ],
+      "meta": {}
+    },
+    "OCAM-220": {
+      "layer": "OCAM-220",
+      "entity_type": "socket",
+      "count": 18,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "C6",
+        "C7",
+        "C8",
+        "C9",
+        "CA",
+        "CB",
+        "F7",
+        "F8",
+        "F9",
+        "FA",
+        "FB",
+        "FC",
+        "128",
+        "129",
+        "12A",
+        "12B",
+        "12C",
+        "12D"
+      ],
+      "meta": {}
+    },
+    "CONG-TAC": {
+      "layer": "CONG-TAC",
+      "entity_type": "switch",
+      "count": 9,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "CC",
+        "CD",
+        "CE",
+        "FD",
+        "FE",
+        "FF",
+        "12E",
+        "12F",
+        "130"
+      ],
+      "meta": {}
+    },
+    "DIEU-HOA": {
+      "layer": "DIEU-HOA",
+      "entity_type": "ac",
+      "count": 9,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "CF",
+        "D0",
+        "D1",
+        "100",
+        "101",
+        "102",
+        "131",
+        "132",
+        "133"
+      ],
+      "meta": {}
+    },
+    "LAN-CAN": {
+      "layer": "LAN-CAN",
+      "entity_type": "railing",
+      "count": 0,
+      "length_m": 9.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "D2",
+        "103",
+        "134"
+      ],
+      "meta": {}
+    },
+    "TEXT": {
+      "layer": "TEXT",
+      "entity_type": "other",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "D3",
+        "104",
+        "135"
+      ],
+      "meta": {}
+    },
+    "MONG-COC": {
+      "layer": "MONG-COC",
+      "entity_type": "foundation",
+      "count": 6,
+      "length_m": 72.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "136",
+        "137",
+        "138",
+        "139",
+        "13A",
+        "13B"
+      ],
+      "meta": {}
+    },
+    "MAI-NGOI": {
+      "layer": "MAI-NGOI",
+      "entity_type": "other",
+      "count": 0,
+      "length_m": 0.0,
+      "area_m2": 0.0,
+      "volume_m3": 0.0,
+      "handles": [
+        "13C"
+      ],
+      "meta": {}
+    }
+  },
+  "warnings": []
+}

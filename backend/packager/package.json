@@ -1,0 +1,33 @@
+{
+  "name": "@vct/packager",
+  "version": "2.0.0",
+  "description": "Viet-Contech Output Packager — đóng gói 28+ deliverables thành ZIP gửi khách + hồ sơ xin phép Sở XD theo Nghị định 15/2021/NĐ-CP",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx tests/test-pack.ts",
+    "test:legacy": "tsx tests/test-export.ts",
+    "test:smoke": "tsx tests/test-export.ts smoke"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "better-sqlite3": "^12.9.0",
+    "hono": "^4.12.16",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.0",
+    "@types/qrcode": "^1.5.5",
+    "adm-zip": "^0.5.16",
+    "@types/adm-zip": "^0.5.7",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

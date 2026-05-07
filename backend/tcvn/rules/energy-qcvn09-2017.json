@@ -1,0 +1,119 @@
+{
+  "category": "energy",
+  "standard": "QCVN 09:2017/BXD",
+  "title_vi": "Quy chuan ky thuat quoc gia ve cac cong trinh xay dung su dung nang luong hieu qua",
+  "title_en": "National technical regulation on energy efficiency for buildings",
+  "version": "2017",
+  "rules": [
+    {
+      "code": "E001",
+      "version": "1.0",
+      "statement_vi": "EUI toi da nha o 120 kWh/m2/nam",
+      "statement_en": "Maximum EUI for residential 120 kWh/m2/year",
+      "formula": "EUI <= 120",
+      "inputs": ["EUI_kwh_m2_year"],
+      "expected": 120,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 12, "section": "2.1.1" }
+    },
+    {
+      "code": "E002",
+      "version": "1.0",
+      "statement_vi": "He so U tuong bao che <=2.4 W/m2K",
+      "statement_en": "Wall U-value <=2.4 W/m2K",
+      "formula": "U_wall <= 2.4",
+      "inputs": ["U_wall_w_m2_k"],
+      "expected": 2.4,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 16, "section": "2.2.1" }
+    },
+    {
+      "code": "E003",
+      "version": "1.0",
+      "statement_vi": "He so U mai <=1.0 W/m2K",
+      "statement_en": "Roof U-value <=1.0 W/m2K",
+      "formula": "U_roof <= 1.0",
+      "inputs": ["U_roof_w_m2_k"],
+      "expected": 1.0,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 16, "section": "2.2.2" }
+    },
+    {
+      "code": "E004",
+      "version": "1.0",
+      "statement_vi": "SHGC kinh phia Nam <=0.4",
+      "statement_en": "South-facing glass SHGC <=0.4",
+      "formula": "SHGC_south <= 0.4",
+      "inputs": ["SHGC_south"],
+      "expected": 0.4,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 18, "section": "2.3.1" }
+    },
+    {
+      "code": "E005",
+      "version": "1.0",
+      "statement_vi": "WWR (Window-Wall Ratio) <=30%",
+      "statement_en": "Window-Wall Ratio <=30%",
+      "formula": "WWR <= 30",
+      "inputs": ["WWR_pct"],
+      "expected": 30,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 18, "section": "2.3.2" }
+    },
+    {
+      "code": "E006",
+      "version": "1.0",
+      "statement_vi": "Hieu suat den LED >=80 lm/W",
+      "statement_en": "LED light efficiency >=80 lm/W",
+      "formula": "LED_efficiency >= 80",
+      "inputs": ["LED_lm_w"],
+      "expected": 80,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 22, "section": "2.4.1" }
+    },
+    {
+      "code": "E007",
+      "version": "1.0",
+      "statement_vi": "Cong suat dieu hoa COP >=3.2",
+      "statement_en": "AC COP >=3.2",
+      "formula": "AC_COP >= 3.2",
+      "inputs": ["AC_COP"],
+      "expected": 3.2,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 25, "section": "2.5.1" }
+    },
+    {
+      "code": "E008",
+      "version": "1.0",
+      "statement_vi": "Cach nhiet ong nuoc nong >=20mm",
+      "statement_en": "Hot water pipe insulation >=20mm",
+      "formula": "hot_water_insulation >= 20",
+      "inputs": ["hot_water_insulation_mm"],
+      "expected": 20,
+      "severity": "warn",
+      "references": { "tcvn": "QCVN 09:2017", "page": 27, "section": "2.6.1" }
+    },
+    {
+      "code": "E009",
+      "version": "1.0",
+      "statement_vi": "Mat do cong suat chieu sang nha o <=8 W/m2",
+      "statement_en": "Lighting power density residential <=8 W/m2",
+      "formula": "LPD_residential <= 8",
+      "inputs": ["LPD_w_m2"],
+      "expected": 8,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 09:2017", "page": 22, "section": "2.4.3" }
+    },
+    {
+      "code": "E010",
+      "version": "1.0",
+      "statement_vi": "Cua so co thiet bi che nang phia Tay-Dong",
+      "statement_en": "Shading required for west-east facing windows",
+      "formula": "if window_west or window_east then shading=true",
+      "inputs": ["has_shading_we"],
+      "expected": true,
+      "severity": "warn",
+      "references": { "tcvn": "QCVN 09:2017", "page": 19, "section": "2.3.3" }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@vietcontech/pipeline",
+  "version": "0.1.0",
+  "description": "Viet-Contech Pipeline Orchestrator — coordinator 19 AI agents (NASA-style closed-loop iteration, FDIR, TMR)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "ts-node tests/test-pipeline.ts",
+    "test:e2e": "PROVIDER_MODE=mock ts-node tests/test-pipeline.ts",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": ["vietcontech", "pipeline", "orchestrator", "ai-agents", "fdir", "tmr"],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}

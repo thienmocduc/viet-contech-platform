@@ -1,0 +1,234 @@
+{
+  "schema_version": "2.0.0",
+  "package_id": "PKG-VCT-2026-002-R01-1778156432451",
+  "package_type": "permit_submission",
+  "archive_format": "zip",
+  "generated_at": "2026-05-07T12:20:32.451Z",
+  "project": {
+    "code": "VCT-2026-002",
+    "name": "Nhà phố Quận 7 - Hồ sơ xin phép",
+    "owner_name": "Lê Thị C",
+    "address": "789 Trần Não, P. Bình An, Q.2, TPHCM",
+    "phase": "DD",
+    "designed_by": "Viet-Contech Co., Ltd",
+    "id": "proj_test_permit",
+    "revision_id": "rev_1"
+  },
+  "branding": {
+    "company": "VIET CONTECH",
+    "color": "#C4933A"
+  },
+  "counts": {
+    "drawings": 28,
+    "renders": 0,
+    "reports": 0,
+    "boq": 0,
+    "ifc": 0,
+    "permit_files": 0,
+    "total": 28
+  },
+  "totals": {
+    "drawings_count": 28,
+    "revision": 1
+  },
+  "qc_pass": true,
+  "files": [
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_01_MatBangTongThe_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "dbbfd0d943486a0b8767d9130a78534237f768e3f556607572ef3c5ae21eea35",
+      "kind": "dwg",
+      "code": "KT-01"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_02_MatBangTang1_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "f967c62d7d25af4274befc716a8994e878587aa267b08937a62fd11b839be883",
+      "kind": "dwg",
+      "code": "KT-02"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_03_MatBangTang2_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "f84ee9c49641d8ac0e4947ecbffafe1fc7825b83f8f0ef7373d698754d0a99ca",
+      "kind": "dwg",
+      "code": "KT-03"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_04_MatBangTang3_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "3a8ea5f84f7417081d3ebbc413b55e5f9694a0c21d3773fb43884de7433ba03e",
+      "kind": "dwg",
+      "code": "KT-04"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_05_MatBangMai_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "cf2cfb3bc19c6f4aa4348b088491e7d53a19f71b9d4874088e7e2b518095f6e5",
+      "kind": "dwg",
+      "code": "KT-05"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_06_MatDungChinh_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "38a29b7768152f14803d302163c88a67a607390cd7e2a31865039750f3200964",
+      "kind": "dwg",
+      "code": "KT-06"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_07_MatDungBenTrai_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "cf69b324b791b2e12d730581a1f2c37178aef5909783f0ddbfdbab4494d34c2a",
+      "kind": "dwg",
+      "code": "KT-07"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_08_MatDungBenPhai_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "41d1812ec28c3ac3b46797f20dfef5d304f929c53acb98d1ee766de583f98be6",
+      "kind": "dwg",
+      "code": "KT-08"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_09_MatDungSau_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "3faa42ef1f89cfbd22120787be7fe26dad60f6e6beda97598a9f2f56b17251e2",
+      "kind": "dwg",
+      "code": "KT-09"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_10_MatCatAA_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "424dafe9c9a67b0981e9c9041f4f407a7630e1a901b5a25f8f4dee807bb8f073",
+      "kind": "dwg",
+      "code": "KT-10"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_11_MatCatBB_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "47441b97e54ce4b8f2bec1d4ba3060449128d76f1f4bcadd62e5c9f5c577abdd",
+      "kind": "dwg",
+      "code": "KT-11"
+    },
+    {
+      "rel_path": "02_KetCau/VCT-2026-002_DD_KC_01_MatBangCocMong_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "7543ff859b149efa75351271ccfc0c63d7c75b8e00cdaf41087bb6e3ab3c41e9",
+      "kind": "dwg",
+      "code": "KC-01"
+    },
+    {
+      "rel_path": "02_KetCau/VCT-2026-002_DD_KC_02_MatBangCotTang_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "a84917506c4f426b6bde30816cf3698d6a003d6202315b5604e3462f98bd85de",
+      "kind": "dwg",
+      "code": "KC-02"
+    },
+    {
+      "rel_path": "02_KetCau/VCT-2026-002_DD_KC_03_MatBangDamSan_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "afc1129eba84d43f1327daaa49f27192e6cd7803dae52d758e4c77528370089e",
+      "kind": "dwg",
+      "code": "KC-03"
+    },
+    {
+      "rel_path": "02_KetCau/VCT-2026-002_DD_KC_04_BaoCaoTinhToanEtabs_R01.pdf",
+      "size_bytes": 25600,
+      "sha256": "ef5f1e05846fb566aab8f2d7e87f8b43708d6f3d1d92f997429797dbadb22824",
+      "kind": "pdf",
+      "code": "KC-04"
+    },
+    {
+      "rel_path": "03_DienNuoc/Dien/VCT-2026-002_DD_DT_01_MatBangDienChinh_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "2e3a2b1455019e27fb52166c218971e8a996b4195f8d001b0d29adf1cfe0a6b6",
+      "kind": "dwg",
+      "code": "DT-01"
+    },
+    {
+      "rel_path": "03_DienNuoc/Dien/VCT-2026-002_DD_DT_02_SoDoNguyenLyDien_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "e9d1dc3eab2615bb8fd0441a5213103af08c606f62d54653b2d85d26088e879a",
+      "kind": "dwg",
+      "code": "DT-02"
+    },
+    {
+      "rel_path": "03_DienNuoc/CapThoatNuoc/VCT-2026-002_DD_CN_01_MatBangCapThoatNuoc_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "88683591583306d8e31b4d06ee4d819810c68ebd828fc3c615496292dae8f3b5",
+      "kind": "dwg",
+      "code": "CN-01"
+    },
+    {
+      "rel_path": "04_HVAC_PCCC/HVAC/VCT-2026-002_DD_HVAC_01_MatBangHvac_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "750810217f5581b19fb9b5050c06a3741882ab8eae4f3998915329b41300271c",
+      "kind": "dwg",
+      "code": "HVAC-01"
+    },
+    {
+      "rel_path": "04_HVAC_PCCC/PCCC/VCT-2026-002_DD_PCCC_01_MatBangPccc_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "543328bace0df5b94e1c5fe54d1a9b68a360f8bfd9b26ff25758a40966f61695",
+      "kind": "dwg",
+      "code": "PCCC-01"
+    },
+    {
+      "rel_path": "05_NoiThat/VCT-2026-002_DD_NT_01_MatBangNoiThat_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "61cf0f9689e80c1a5f6be4114decb1dddc9d278e6eefd2a338002f14454b68a1",
+      "kind": "dwg",
+      "code": "NT-01"
+    },
+    {
+      "rel_path": "05_NoiThat/VCT-2026-002_DD_NT_02_MatBangTran_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "2cb22551d12521316e626bee77190166bd4f935fd27637b1d6044a4f9c29bc9b",
+      "kind": "dwg",
+      "code": "NT-02"
+    },
+    {
+      "rel_path": "05_NoiThat/VCT-2026-002_DD_NT_03_ChiTietTuKe_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "703d6c66765060b2fb39314623115ce012deb7034ef27a62d0fe5d49f124ab9b",
+      "kind": "dwg",
+      "code": "NT-03"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_12_ChiTietCua_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "ccf0c8948025626e2b4af5591fc8b145291df4a4fb4ef05e31a5f4f7bc05c8f5",
+      "kind": "dwg",
+      "code": "KT-12"
+    },
+    {
+      "rel_path": "01_KienTruc/VCT-2026-002_DD_KT_13_ChiTietCauThang_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "83fb821b30a5a8fb7fdf78d9ba965a9eae5b9fd29520bc582a1ad14b184b5853",
+      "kind": "dwg",
+      "code": "KT-13"
+    },
+    {
+      "rel_path": "02_KetCau/VCT-2026-002_DD_KC_05_ChiTietMongCoc_R01.pdf",
+      "size_bytes": 25600,
+      "sha256": "3b390004cdb8d11095bcfc8f97829a10470381c8f22b0ffd76e27e73bf777c12",
+      "kind": "pdf",
+      "code": "KC-05"
+    },
+    {
+      "rel_path": "05_NoiThat/VCT-2026-002_DD_NT_04_BangVatLieuNoiThat_R01.pdf",
+      "size_bytes": 25600,
+      "sha256": "dffe06d9a09ef8dbb0526334d2180ef50648aea1eb7fefa19663bb36395aa23a",
+      "kind": "pdf",
+      "code": "NT-04"
+    },
+    {
+      "rel_path": "04_HVAC_PCCC/PCCC/VCT-2026-002_DD_PCCC_02_SoDoThoatHiem_R01.dwg",
+      "size_bytes": 8192,
+      "sha256": "2c7eb2f8551378189137e17c3f1f1b3d69905dff05f68f3f50e1686b1bd51a5b",
+      "kind": "dwg",
+      "code": "PCCC-02"
+    }
+  ],
+  "manifest_signature": "40cbe2101a365b3daaac1e955cd7b3a06bf3e4cadfed945f66c45eea742ca65b"
+}

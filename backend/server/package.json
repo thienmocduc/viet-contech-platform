@@ -1,0 +1,35 @@
+{
+  "name": "@vct/server",
+  "version": "1.0.0",
+  "description": "Viet-Contech Design Platform — Master API Server (Hono) — Auth + Project + Pipeline + 19 agents + 12 QC gates",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "test": "tsx tests/test-server.ts",
+    "test:smoke": "tsx tests/test-server.ts smoke"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "archiver": "^7.0.1",
+    "better-sqlite3": "^12.9.0",
+    "hono": "^4.12.16",
+    "jose": "^5.9.6",
+    "nodemailer": "^6.9.16",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.0",
+    "@types/nodemailer": "^6.4.17",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

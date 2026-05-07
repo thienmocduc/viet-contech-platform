@@ -1,0 +1,27 @@
+{
+  "name": "viet-contech-render",
+  "version": "0.1.0",
+  "description": "Render Farm Orchestrator — Zeni Cloud Lop 03 sd-lora-interior, 9 styles x 8 angles + 360 walkthrough",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx tests/test-render.ts",
+    "test:v2": "tsx tests/test-render-v2.ts",
+    "test:all": "tsx tests/test-render.ts && tsx tests/test-render-v2.ts"
+  },
+  "dependencies": {
+    "hono": "^4.12.16",
+    "sharp": "^0.34.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

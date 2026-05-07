@@ -1,0 +1,108 @@
+{
+  "category": "planning",
+  "standard": "QCXDVN 01:2021/BXD",
+  "title_vi": "Quy chuan ky thuat quoc gia ve quy hoach xay dung",
+  "title_en": "National technical regulation on construction planning",
+  "version": "2021",
+  "rules": [
+    {
+      "code": "P001",
+      "version": "1.0",
+      "statement_vi": "Mat do xay dung lo <100m2 toi da 80%",
+      "statement_en": "Coverage ratio for lot <100m2 max 80%",
+      "formula": "if lot_area<100 then coverage<=80",
+      "inputs": ["lot_area_m2", "coverage_pct"],
+      "expected": 80,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 24, "section": "2.6.3 Table 4" }
+    },
+    {
+      "code": "P002",
+      "version": "1.0",
+      "statement_vi": "Mat do xay dung lo 100-300m2 toi da 70%",
+      "statement_en": "Coverage ratio for lot 100-300m2 max 70%",
+      "formula": "if 100<=lot_area<=300 then coverage<=70",
+      "inputs": ["lot_area_m2", "coverage_pct"],
+      "expected": 70,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 24, "section": "2.6.3 Table 4" }
+    },
+    {
+      "code": "P003",
+      "version": "1.0",
+      "statement_vi": "Mat do xay dung lo >300m2 toi da 60%",
+      "statement_en": "Coverage ratio for lot >300m2 max 60%",
+      "formula": "if lot_area>300 then coverage<=60",
+      "inputs": ["lot_area_m2", "coverage_pct"],
+      "expected": 60,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 24, "section": "2.6.3 Table 4" }
+    },
+    {
+      "code": "P004",
+      "version": "1.0",
+      "statement_vi": "Lui mat tien toi thieu 1.5m (nha lien ke)",
+      "statement_en": "Front setback >=1.5m (terrace house)",
+      "formula": "front_setback >= 1.5",
+      "inputs": ["front_setback_m"],
+      "expected": 1.5,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 26, "section": "2.6.5" }
+    },
+    {
+      "code": "P005",
+      "version": "1.0",
+      "statement_vi": "Lui sau toi thieu 2m",
+      "statement_en": "Rear setback >=2m",
+      "formula": "rear_setback >= 2",
+      "inputs": ["rear_setback_m"],
+      "expected": 2,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 26, "section": "2.6.5" }
+    },
+    {
+      "code": "P006",
+      "version": "1.0",
+      "statement_vi": "Lui hong toi thieu 1m (nha lien ke)",
+      "statement_en": "Side setback >=1m (terrace house)",
+      "formula": "side_setback >= 1",
+      "inputs": ["side_setback_m"],
+      "expected": 1,
+      "severity": "warn",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 26, "section": "2.6.5" }
+    },
+    {
+      "code": "P007",
+      "version": "1.0",
+      "statement_vi": "Chieu cao toi da pho 5T tuong duong 17m",
+      "statement_en": "Max height for street 5-storey ~17m",
+      "formula": "if street_zone='low' then height<=17",
+      "inputs": ["building_height_m", "street_zone"],
+      "expected": 17,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 28, "section": "2.6.7" }
+    },
+    {
+      "code": "P008",
+      "version": "1.0",
+      "statement_vi": "Ty le cay xanh >=10% dien tich lo",
+      "statement_en": "Green ratio >=10% lot area",
+      "formula": "green_ratio >= 10",
+      "inputs": ["green_ratio_pct"],
+      "expected": 10,
+      "severity": "error",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 30, "section": "2.7.1" }
+    },
+    {
+      "code": "P009",
+      "version": "1.0",
+      "statement_vi": "Khoang cach giua hai nha lien ke khac chu >=2m",
+      "statement_en": "Distance between two adjacent houses different owners >=2m",
+      "formula": "distance_between_houses >= 2",
+      "inputs": ["distance_between_houses_m"],
+      "expected": 2,
+      "severity": "warn",
+      "references": { "tcvn": "QCXDVN 01:2021", "page": 27, "section": "2.6.6" }
+    }
+  ]
+}

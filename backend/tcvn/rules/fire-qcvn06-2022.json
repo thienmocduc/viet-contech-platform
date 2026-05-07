@@ -1,0 +1,152 @@
+{
+  "category": "fire",
+  "standard": "QCVN 06:2022/BXD",
+  "title_vi": "Quy chuan ky thuat quoc gia ve an toan chay cho nha va cong trinh",
+  "title_en": "National technical regulation on fire safety for buildings",
+  "version": "2022",
+  "rules": [
+    {
+      "code": "F001",
+      "version": "1.0",
+      "statement_vi": "Khoang cach toi loi thoat khong qua 30m",
+      "statement_en": "Maximum distance to exit",
+      "formula": "max_distance_to_exit <= 30",
+      "inputs": ["max_distance_to_exit_m"],
+      "expected": 30,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 32, "section": "3.2.5" }
+    },
+    {
+      "code": "F002",
+      "version": "1.0",
+      "statement_vi": "Do rong cua thoat hiem >=1.2m",
+      "statement_en": "Exit door width >=1.2m",
+      "formula": "exit_door_width >= 1.2",
+      "inputs": ["exit_door_width_m"],
+      "expected": 1.2,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 35, "section": "3.3.1" }
+    },
+    {
+      "code": "F003",
+      "version": "1.0",
+      "statement_vi": "Do rong hanh lang thoat hiem >=1.4m",
+      "statement_en": "Corridor width >=1.4m",
+      "formula": "corridor_width >= 1.4",
+      "inputs": ["corridor_width_m"],
+      "expected": 1.4,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 35, "section": "3.3.2" }
+    },
+    {
+      "code": "F004",
+      "version": "1.0",
+      "statement_vi": "Toi thieu 2 loi thoat neu >25 nguoi/tang",
+      "statement_en": "Min 2 exits if >25 persons per floor",
+      "formula": "if occupants_per_floor>25 then num_exits>=2",
+      "inputs": ["occupants_per_floor", "num_exits"],
+      "expected": 2,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 33, "section": "3.2.7" }
+    },
+    {
+      "code": "F005",
+      "version": "1.0",
+      "statement_vi": "Tinh chiu lua cot R60 cho nha <=7T",
+      "statement_en": "Fire resistance R60 for columns <=7-storey",
+      "formula": "if num_floors<=7 then column_fire_resistance >= R60",
+      "inputs": ["num_floors", "column_fire_resistance_R"],
+      "expected": "R60",
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 25, "section": "2.6 Table 4" }
+    },
+    {
+      "code": "F006",
+      "version": "1.0",
+      "statement_vi": "Tinh chiu lua dam R45 cho nha <=7T",
+      "statement_en": "Fire resistance R45 for beams <=7-storey",
+      "formula": "if num_floors<=7 then beam_fire_resistance >= R45",
+      "inputs": ["num_floors", "beam_fire_resistance_R"],
+      "expected": "R45",
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 25, "section": "2.6 Table 4" }
+    },
+    {
+      "code": "F007",
+      "version": "1.0",
+      "statement_vi": "Bat buoc lap sprinkler nha >5T",
+      "statement_en": "Sprinkler required for >5-storey",
+      "formula": "if num_floors>5 then sprinkler=true",
+      "inputs": ["num_floors", "has_sprinkler"],
+      "expected": true,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 67, "section": "5.2.4" }
+    },
+    {
+      "code": "F008",
+      "version": "1.0",
+      "statement_vi": "Bat buoc bao chay tu dong nha >=3T",
+      "statement_en": "Auto fire alarm required for >=3-storey",
+      "formula": "if num_floors>=3 then fire_alarm=true",
+      "inputs": ["num_floors", "has_fire_alarm"],
+      "expected": true,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 65, "section": "5.1.3" }
+    },
+    {
+      "code": "F009",
+      "version": "1.0",
+      "statement_vi": "Cua thoat hiem mo theo huong thoat",
+      "statement_en": "Exit door opens in escape direction",
+      "formula": "exit_door_opens_outward = true",
+      "inputs": ["exit_door_opens_outward"],
+      "expected": true,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 06:2022", "page": 35, "section": "3.3.4" }
+    },
+    {
+      "code": "F010",
+      "version": "1.0",
+      "statement_vi": "Chieu cao loi thoat thong nhat >=2m",
+      "statement_en": "Exit clear height >=2m",
+      "formula": "exit_clear_height >= 2",
+      "inputs": ["exit_clear_height_m"],
+      "expected": 2.0,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 06:2022", "page": 35, "section": "3.3.3" }
+    },
+    {
+      "code": "F011",
+      "version": "1.0",
+      "statement_vi": "Khoang cach hai loi thoat hiem (qua nua duong cheo)",
+      "statement_en": "Distance between two exits >= half diagonal",
+      "formula": "distance_between_exits >= 0.5 * diagonal",
+      "inputs": ["distance_between_exits_m", "diagonal_m"],
+      "expected": "0.5*diagonal",
+      "severity": "error",
+      "references": { "tcvn": "QCVN 06:2022", "page": 33, "section": "3.2.8" }
+    },
+    {
+      "code": "F012",
+      "version": "1.0",
+      "statement_vi": "Den exit chieu sang khan cap",
+      "statement_en": "Emergency exit lighting required",
+      "formula": "emergency_lighting = true",
+      "inputs": ["emergency_lighting"],
+      "expected": true,
+      "severity": "error",
+      "references": { "tcvn": "QCVN 06:2022", "page": 70, "section": "5.4.1" }
+    },
+    {
+      "code": "F013",
+      "version": "1.0",
+      "statement_vi": "He thong cap nuoc chua chay tu dong nha >7T",
+      "statement_en": "Auto fire water supply for >7-storey",
+      "formula": "if num_floors>7 then fire_water_supply=true",
+      "inputs": ["num_floors", "has_fire_water_supply"],
+      "expected": true,
+      "severity": "critical",
+      "references": { "tcvn": "QCVN 06:2022", "page": 68, "section": "5.3.1" }
+    }
+  ]
+}

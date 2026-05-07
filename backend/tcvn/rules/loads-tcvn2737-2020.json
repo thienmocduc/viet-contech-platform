@@ -1,0 +1,196 @@
+{
+  "category": "loads",
+  "standard": "TCVN 2737:2020",
+  "title_vi": "Tai trong va tac dong - Tieu chuan thiet ke",
+  "title_en": "Loads and actions - Design standard",
+  "version": "2020",
+  "rules": [
+    {
+      "code": "L001",
+      "version": "1.0",
+      "statement_vi": "Tai song nha o dan dung",
+      "statement_en": "Live load for residential buildings",
+      "formula": "live_load_residential = 1.5 kN/m2",
+      "inputs": ["building_type", "live_load_kn_m2"],
+      "expected": 1.5,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 22, "section": "Table 4" }
+    },
+    {
+      "code": "L002",
+      "version": "1.0",
+      "statement_vi": "Tai song ban cong",
+      "statement_en": "Live load for balcony",
+      "formula": "live_load_balcony = 2.0 kN/m2",
+      "inputs": ["live_load_balcony_kn_m2"],
+      "expected": 2.0,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 22, "section": "Table 4" }
+    },
+    {
+      "code": "L003",
+      "version": "1.0",
+      "statement_vi": "Tai song nha go",
+      "statement_en": "Live load for wooden house",
+      "formula": "live_load_wooden = 1.0 kN/m2",
+      "inputs": ["live_load_wooden_kn_m2"],
+      "expected": 1.0,
+      "severity": "info",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 22, "section": "Table 4" }
+    },
+    {
+      "code": "L004",
+      "version": "1.0",
+      "statement_vi": "Tai song van phong",
+      "statement_en": "Live load for office",
+      "formula": "live_load_office = 4.0 kN/m2",
+      "inputs": ["live_load_office_kn_m2"],
+      "expected": 4.0,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 22, "section": "Table 4" }
+    },
+    {
+      "code": "L005",
+      "version": "1.0",
+      "statement_vi": "Tai song cau thang",
+      "statement_en": "Live load for staircase",
+      "formula": "live_load_stair = 3.0 kN/m2",
+      "inputs": ["live_load_stair_kn_m2"],
+      "expected": 3.0,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 23, "section": "Table 4" }
+    },
+    {
+      "code": "L006",
+      "version": "1.0",
+      "statement_vi": "Tai song mai khong su dung",
+      "statement_en": "Live load for non-accessible roof",
+      "formula": "live_load_roof_unused = 0.7 kN/m2",
+      "inputs": ["live_load_roof_kn_m2"],
+      "expected": 0.7,
+      "severity": "info",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 24, "section": "Table 5" }
+    },
+    {
+      "code": "L007",
+      "version": "1.0",
+      "statement_vi": "Trong luong rieng be tong cot thep",
+      "statement_en": "Unit weight of reinforced concrete",
+      "formula": "gamma_RC = 25 kN/m3",
+      "inputs": ["gamma_rc_kn_m3"],
+      "expected": 25,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 18, "section": "Table 1" }
+    },
+    {
+      "code": "L008",
+      "version": "1.0",
+      "statement_vi": "Trong luong rieng gach xay",
+      "statement_en": "Unit weight of masonry",
+      "formula": "gamma_brick = 18 kN/m3",
+      "inputs": ["gamma_brick_kn_m3"],
+      "expected": 18,
+      "severity": "info",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 18, "section": "Table 1" }
+    },
+    {
+      "code": "L009",
+      "version": "1.0",
+      "statement_vi": "Trong luong rieng vua",
+      "statement_en": "Unit weight of mortar",
+      "formula": "gamma_mortar = 18 kN/m3",
+      "inputs": ["gamma_mortar_kn_m3"],
+      "expected": 18,
+      "severity": "info",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 18, "section": "Table 1" }
+    },
+    {
+      "code": "L010",
+      "version": "1.0",
+      "statement_vi": "Trong luong rieng san go",
+      "statement_en": "Unit weight of wooden floor",
+      "formula": "load_wood_floor = 0.4 kN/m2",
+      "inputs": ["load_wood_floor_kn_m2"],
+      "expected": 0.4,
+      "severity": "info",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 19, "section": "Table 2" }
+    },
+    {
+      "code": "L011",
+      "version": "1.0",
+      "statement_vi": "Tai gio Ha Noi vung IIB",
+      "statement_en": "Wind load Ha Noi zone IIB",
+      "formula": "W0_HaNoi_IIB = 0.95 kN/m2",
+      "inputs": ["wind_zone", "W0_kn_m2"],
+      "expected": 0.95,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 35, "section": "6.4.1" }
+    },
+    {
+      "code": "L012",
+      "version": "1.0",
+      "statement_vi": "Tai gio TPHCM vung IIA",
+      "statement_en": "Wind load HCMC zone IIA",
+      "formula": "W0_HCM_IIA = 0.83 kN/m2",
+      "inputs": ["wind_zone", "W0_kn_m2"],
+      "expected": 0.83,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 35, "section": "6.4.1" }
+    },
+    {
+      "code": "L013",
+      "version": "1.0",
+      "statement_vi": "Tai dong dat HN-SG cap 7-8 he so K",
+      "statement_en": "Earthquake zone 7-8 K coefficient",
+      "formula": "earthquake_K_zone7 in [0.05, 0.1]",
+      "inputs": ["earthquake_zone", "K_factor"],
+      "expected": "0.05-0.1",
+      "severity": "error",
+      "references": { "tcvn": "TCVN 9386:2012", "page": 12, "section": "3.2" }
+    },
+    {
+      "code": "L014",
+      "version": "1.0",
+      "statement_vi": "He so vuot tai tinh gamma_DL",
+      "statement_en": "Dead load factor gamma_DL",
+      "formula": "gamma_DL = 1.1",
+      "inputs": ["gamma_DL"],
+      "expected": 1.1,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 26, "section": "5.1" }
+    },
+    {
+      "code": "L015",
+      "version": "1.0",
+      "statement_vi": "He so vuot tai song gamma_LL",
+      "statement_en": "Live load factor gamma_LL",
+      "formula": "gamma_LL = 1.2",
+      "inputs": ["gamma_LL"],
+      "expected": 1.2,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 26, "section": "5.1" }
+    },
+    {
+      "code": "L016",
+      "version": "1.0",
+      "statement_vi": "Tai trong nha o cong cong y te",
+      "statement_en": "Live load for medical/public buildings",
+      "formula": "live_load_medical = 3.0 kN/m2",
+      "inputs": ["live_load_medical_kn_m2"],
+      "expected": 3.0,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 22, "section": "Table 4" }
+    },
+    {
+      "code": "L017",
+      "version": "1.0",
+      "statement_vi": "Tai song mai co the di lai",
+      "statement_en": "Accessible roof live load",
+      "formula": "live_load_roof_used = 1.5 kN/m2",
+      "inputs": ["live_load_roof_used_kn_m2"],
+      "expected": 1.5,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 2737:2020", "page": 24, "section": "Table 5" }
+    }
+  ]
+}

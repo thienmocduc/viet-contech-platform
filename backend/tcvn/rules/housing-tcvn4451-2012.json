@@ -1,0 +1,130 @@
+{
+  "category": "housing",
+  "standard": "TCVN 4451:2012",
+  "title_vi": "Nha o - Nguyen tac co ban de thiet ke",
+  "title_en": "Residential houses - Basic principles for design",
+  "version": "2012",
+  "rules": [
+    {
+      "code": "H001",
+      "version": "1.0",
+      "statement_vi": "Chieu cao tran phong o >=2.7m",
+      "statement_en": "Living room ceiling height >=2.7m",
+      "formula": "ceiling_main_room >= 2.7",
+      "inputs": ["ceiling_main_room_m"],
+      "expected": 2.7,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 8, "section": "5.2.1" }
+    },
+    {
+      "code": "H002",
+      "version": "1.0",
+      "statement_vi": "Chieu cao tran phong phu (WC, kho, bep) >=2.4m",
+      "statement_en": "Auxiliary room ceiling height >=2.4m",
+      "formula": "ceiling_aux_room >= 2.4",
+      "inputs": ["ceiling_aux_room_m"],
+      "expected": 2.4,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 8, "section": "5.2.2" }
+    },
+    {
+      "code": "H003",
+      "version": "1.0",
+      "statement_vi": "Dien tich cua so >= 1/8 dien tich san",
+      "statement_en": "Window area >= 1/8 floor area",
+      "formula": "window_area >= floor_area/8",
+      "inputs": ["window_area_m2", "floor_area_m2"],
+      "expected": "floor_area/8",
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 11, "section": "5.4.1" }
+    },
+    {
+      "code": "H004",
+      "version": "1.0",
+      "statement_vi": "Dien tich phong ngu chinh >=12m2",
+      "statement_en": "Master bedroom area >=12m2",
+      "formula": "master_bedroom >= 12",
+      "inputs": ["master_bedroom_m2"],
+      "expected": 12,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 9, "section": "5.3.1" }
+    },
+    {
+      "code": "H005",
+      "version": "1.0",
+      "statement_vi": "Dien tich phong ngu phu >=9m2",
+      "statement_en": "Secondary bedroom area >=9m2",
+      "formula": "secondary_bedroom >= 9",
+      "inputs": ["secondary_bedroom_m2"],
+      "expected": 9,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 9, "section": "5.3.1" }
+    },
+    {
+      "code": "H006",
+      "version": "1.0",
+      "statement_vi": "Dien tich bep >=6m2",
+      "statement_en": "Kitchen area >=6m2",
+      "formula": "kitchen_area >= 6",
+      "inputs": ["kitchen_area_m2"],
+      "expected": 6,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 9, "section": "5.3.2" }
+    },
+    {
+      "code": "H007",
+      "version": "1.0",
+      "statement_vi": "Bep co thong gio cuong buc",
+      "statement_en": "Kitchen with mechanical ventilation",
+      "formula": "kitchen_ventilation = true",
+      "inputs": ["kitchen_ventilation"],
+      "expected": true,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 12, "section": "5.4.3" }
+    },
+    {
+      "code": "H008",
+      "version": "1.0",
+      "statement_vi": "WC chinh >=4m2",
+      "statement_en": "Master WC area >=4m2",
+      "formula": "master_wc >= 4",
+      "inputs": ["master_wc_m2"],
+      "expected": 4,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 9, "section": "5.3.3" }
+    },
+    {
+      "code": "H009",
+      "version": "1.0",
+      "statement_vi": "WC phu >=2m2",
+      "statement_en": "Auxiliary WC area >=2m2",
+      "formula": "aux_wc >= 2",
+      "inputs": ["aux_wc_m2"],
+      "expected": 2,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 9, "section": "5.3.3" }
+    },
+    {
+      "code": "H010",
+      "version": "1.0",
+      "statement_vi": "Phong khach >=12m2",
+      "statement_en": "Living room area >=12m2",
+      "formula": "living_room >= 12",
+      "inputs": ["living_room_m2"],
+      "expected": 12,
+      "severity": "warn",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 9, "section": "5.3.1" }
+    },
+    {
+      "code": "H011",
+      "version": "1.0",
+      "statement_vi": "Be rong cua thoat hiem trong nha >=0.8m",
+      "statement_en": "Internal exit door width >=0.8m",
+      "formula": "internal_door_width >= 0.8",
+      "inputs": ["internal_door_width_m"],
+      "expected": 0.8,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 4451:2012", "page": 13, "section": "5.5.1" }
+    }
+  ]
+}

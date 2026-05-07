@@ -1,0 +1,21 @@
+{
+  "name": "@vct/boq-bridge",
+  "version": "1.0.0",
+  "description": "Node-Python bridge cho Viet-Contech BOQ Engine",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "node --import tsx test.ts"
+  },
+  "dependencies": {
+    "hono": "^4.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "id": "C-007",
+  "total_area_m2": 80,
+  "occupants": 5,
+  "levels": 3,
+  "rooms": [
+    {
+      "id": "R-OUT",
+      "kind": "outdoor",
+      "name": "San truoc",
+      "level": 0,
+      "polygon": [
+        { "x": -3000, "y": -3000 },
+        { "x": 8000, "y": -3000 },
+        { "x": 8000, "y": 0 },
+        { "x": -3000, "y": 0 }
+      ],
+      "area_m2": 33,
+      "height_mm": 0
+    },
+    {
+      "id": "R-ENT",
+      "kind": "entryway",
+      "name": "Sanh",
+      "level": 0,
+      "polygon": [
+        { "x": 0, "y": 0 },
+        { "x": 2200, "y": 0 },
+        { "x": 2200, "y": 2200 },
+        { "x": 0, "y": 2200 }
+      ],
+      "area_m2": 4.84,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-PHK",
+      "kind": "living",
+      "name": "Phong khach",
+      "level": 0,
+      "polygon": [
+        { "x": 2200, "y": 0 },
+        { "x": 8000, "y": 0 },
+        { "x": 8000, "y": 4500 },
+        { "x": 2200, "y": 4500 }
+      ],
+      "area_m2": 26.1,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-BEP",
+      "kind": "kitchen",
+      "name": "Bep",
+      "level": 0,
+      "polygon": [
+        { "x": 2200, "y": 4500 },
+        { "x": 5500, "y": 4500 },
+        { "x": 5500, "y": 7500 },
+        { "x": 2200, "y": 7500 }
+      ],
+      "area_m2": 9.9,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-WC1",
+      "kind": "bathroom",
+      "name": "WC tang 1",
+      "level": 0,
+      "polygon": [
+        { "x": 5500, "y": 4500 },
+        { "x": 7800, "y": 4500 },
+        { "x": 7800, "y": 7500 },
+        { "x": 5500, "y": 7500 }
+      ],
+      "area_m2": 6.9,
+      "height_mm": 2700
+    },
+    {
+      "id": "R-GAR",
+      "kind": "garage",
+      "name": "Gara",
+      "level": 0,
+      "polygon": [
+        { "x": 0, "y": 2200 },
+        { "x": 2200, "y": 2200 },
+        { "x": 2200, "y": 7500 },
+        { "x": 0, "y": 7500 }
+      ],
+      "area_m2": 11.66,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-COR1",
+      "kind": "corridor",
+      "name": "Hanh lang T1",
+      "level": 0,
+      "polygon": [
+        { "x": 2200, "y": 7500 },
+        { "x": 7800, "y": 7500 },
+        { "x": 7800, "y": 8500 },
+        { "x": 2200, "y": 8500 }
+      ],
+      "area_m2": 5.6,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-UTIL",
+      "kind": "utility",
+      "name": "Phong ky thuat",
+      "level": 0,
+      "polygon": [
+        { "x": 0, "y": 7500 },
+        { "x": 2200, "y": 7500 },
+        { "x": 2200, "y": 8500 },
+        { "x": 0, "y": 8500 }
+      ],
+      "area_m2": 2.2,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-PN1",
+      "kind": "bedroom",
+      "name": "PN Master",
+      "level": 1,
+      "polygon": [
+        { "x": 0, "y": 0 },
+        { "x": 4500, "y": 0 },
+        { "x": 4500, "y": 4500 },
+        { "x": 0, "y": 4500 }
+      ],
+      "area_m2": 20.25,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-PN2",
+      "kind": "bedroom",
+      "name": "PN 2",
+      "level": 1,
+      "polygon": [
+        { "x": 4500, "y": 0 },
+        { "x": 8000, "y": 0 },
+        { "x": 8000, "y": 4500 },
+        { "x": 4500, "y": 4500 }
+      ],
+      "area_m2": 15.75,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-WC2",
+      "kind": "bathroom",
+      "name": "WC T2",
+      "level": 1,
+      "polygon": [
+        { "x": 0, "y": 4500 },
+        { "x": 2500, "y": 4500 },
+        { "x": 2500, "y": 7500 },
+        { "x": 0, "y": 7500 }
+      ],
+      "area_m2": 7.5,
+      "height_mm": 2700
+    },
+    {
+      "id": "R-COR2",
+      "kind": "corridor",
+      "name": "Hanh lang T2",
+      "level": 1,
+      "polygon": [
+        { "x": 2500, "y": 4500 },
+        { "x": 8000, "y": 4500 },
+        { "x": 8000, "y": 5800 },
+        { "x": 2500, "y": 5800 }
+      ],
+      "area_m2": 7.15,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-STUDY",
+      "kind": "study",
+      "name": "Phong lam viec",
+      "level": 1,
+      "polygon": [
+        { "x": 2500, "y": 5800 },
+        { "x": 8000, "y": 5800 },
+        { "x": 8000, "y": 8500 },
+        { "x": 2500, "y": 8500 }
+      ],
+      "area_m2": 14.85,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-PN3",
+      "kind": "bedroom",
+      "name": "PN 3",
+      "level": 2,
+      "polygon": [
+        { "x": 0, "y": 0 },
+        { "x": 4000, "y": 0 },
+        { "x": 4000, "y": 4500 },
+        { "x": 0, "y": 4500 }
+      ],
+      "area_m2": 18,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-PN4",
+      "kind": "bedroom",
+      "name": "PN 4",
+      "level": 2,
+      "polygon": [
+        { "x": 4000, "y": 0 },
+        { "x": 8000, "y": 0 },
+        { "x": 8000, "y": 4500 },
+        { "x": 4000, "y": 4500 }
+      ],
+      "area_m2": 18,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-WC3",
+      "kind": "bathroom",
+      "name": "WC T3",
+      "level": 2,
+      "polygon": [
+        { "x": 0, "y": 4500 },
+        { "x": 2500, "y": 4500 },
+        { "x": 2500, "y": 7500 },
+        { "x": 0, "y": 7500 }
+      ],
+      "area_m2": 7.5,
+      "height_mm": 2700
+    },
+    {
+      "id": "R-ALTAR",
+      "kind": "altar",
+      "name": "Phong tho",
+      "level": 2,
+      "polygon": [
+        { "x": 2500, "y": 4500 },
+        { "x": 5500, "y": 4500 },
+        { "x": 5500, "y": 7500 },
+        { "x": 2500, "y": 7500 }
+      ],
+      "area_m2": 9,
+      "height_mm": 3200
+    },
+    {
+      "id": "R-BAL",
+      "kind": "balcony",
+      "name": "San thuong",
+      "level": 2,
+      "polygon": [
+        { "x": 5500, "y": 4500 },
+        { "x": 8000, "y": 4500 },
+        { "x": 8000, "y": 8500 },
+        { "x": 5500, "y": 8500 }
+      ],
+      "area_m2": 10,
+      "height_mm": 3200
+    }
+  ],
+  "walls": [
+    { "id": "W-EXT-S", "level": 0, "a": { "x": 0, "y": 0 }, "b": { "x": 8000, "y": 0 }, "thickness_mm": 200, "is_exterior": true },
+    { "id": "W-EXT-E", "level": 0, "a": { "x": 8000, "y": 0 }, "b": { "x": 8000, "y": 8500 }, "thickness_mm": 200, "is_exterior": true },
+    { "id": "W-EXT-N", "level": 0, "a": { "x": 0, "y": 8500 }, "b": { "x": 8000, "y": 8500 }, "thickness_mm": 200, "is_exterior": true },
+    { "id": "W-EXT-W", "level": 0, "a": { "x": 0, "y": 0 }, "b": { "x": 0, "y": 8500 }, "thickness_mm": 200, "is_exterior": true },
+    { "id": "W-INT-1", "level": 0, "a": { "x": 2200, "y": 0 }, "b": { "x": 2200, "y": 8500 }, "thickness_mm": 100, "is_exterior": false },
+    { "id": "W-INT-2", "level": 0, "a": { "x": 2200, "y": 4500 }, "b": { "x": 8000, "y": 4500 }, "thickness_mm": 100, "is_exterior": false },
+    { "id": "W-INT-3", "level": 0, "a": { "x": 5500, "y": 4500 }, "b": { "x": 5500, "y": 7500 }, "thickness_mm": 100, "is_exterior": false },
+    { "id": "W-INT-4", "level": 0, "a": { "x": 2200, "y": 7500 }, "b": { "x": 8000, "y": 7500 }, "thickness_mm": 100, "is_exterior": false },
+    { "id": "W-INT-5", "level": 0, "a": { "x": 2200, "y": 2200 }, "b": { "x": 0, "y": 2200 }, "thickness_mm": 100, "is_exterior": false }
+  ],
+  "doors": [
+    { "id": "D-MAIN", "level": 0, "wall_id": "W-EXT-S", "center": { "x": 1100, "y": 0 }, "width_mm": 1200, "is_exterior": true },
+    { "id": "D-GAR", "level": 0, "wall_id": "W-EXT-S", "center": { "x": 1100, "y": -1500 }, "width_mm": 2400, "is_exterior": true },
+    { "id": "D-PHK-BEP", "level": 0, "wall_id": "W-INT-2", "center": { "x": 4000, "y": 4500 }, "width_mm": 900, "is_exterior": false },
+    { "id": "D-WC1", "level": 0, "wall_id": "W-INT-3", "center": { "x": 5500, "y": 6500 }, "width_mm": 800, "is_exterior": false },
+    { "id": "D-COR-PHK", "level": 0, "wall_id": "W-INT-2", "center": { "x": 7000, "y": 4500 }, "width_mm": 900, "is_exterior": false }
+  ],
+  "windows": [
+    { "id": "WIN-PHK", "level": 0, "wall_id": "W-EXT-E", "center": { "x": 8000, "y": 2000 }, "width_mm": 1800, "height_mm": 1500 },
+    { "id": "WIN-BEP", "level": 0, "wall_id": "W-INT-2", "center": { "x": 4000, "y": 7500 }, "width_mm": 1200, "height_mm": 1200 }
+  ],
+  "main_panel": { "x": 800, "y": 8000 },
+  "water_tank_roof": { "x": 4000, "y": 4000, "z": 9600 },
+  "septic_tank": { "x": 9500, "y": 9500, "z": -2500 }
+}

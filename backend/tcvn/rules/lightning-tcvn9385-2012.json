@@ -1,0 +1,75 @@
+{
+  "category": "lightning",
+  "standard": "TCVN 9385:2012",
+  "title_vi": "Chong set cho cong trinh xay dung - Huong dan thiet ke, kiem tra va bao tri he thong",
+  "title_en": "Protection of structures against lightning - Code of practice",
+  "version": "2012",
+  "rules": [
+    {
+      "code": "LT001",
+      "version": "1.0",
+      "statement_vi": "Nha cao >20m bat buoc he thong LPS Class III",
+      "statement_en": "Building >20m requires LPS Class III",
+      "formula": "if building_height>20 then LPS_class>='III'",
+      "inputs": ["building_height_m", "LPS_class"],
+      "expected": "III",
+      "severity": "critical",
+      "references": { "tcvn": "TCVN 9385:2012", "page": 18, "section": "5.1.1" }
+    },
+    {
+      "code": "LT002",
+      "version": "1.0",
+      "statement_vi": "Khoang cach kim thu set toi cong trinh <=10m",
+      "statement_en": "Distance from air terminal to building <=10m",
+      "formula": "air_terminal_distance <= 10",
+      "inputs": ["air_terminal_distance_m"],
+      "expected": 10,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 9385:2012", "page": 22, "section": "5.2.3" }
+    },
+    {
+      "code": "LT003",
+      "version": "1.0",
+      "statement_vi": "Khoang cach giua cac coc tiep dia >=5m",
+      "statement_en": "Distance between earth electrodes >=5m",
+      "formula": "earth_electrode_spacing >= 5",
+      "inputs": ["earth_electrode_spacing_m"],
+      "expected": 5,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 9385:2012", "page": 30, "section": "5.4.2" }
+    },
+    {
+      "code": "LT004",
+      "version": "1.0",
+      "statement_vi": "Dien tro tiep dia <=10 Ohm",
+      "statement_en": "Earth resistance <=10 Ohm",
+      "formula": "earth_resistance <= 10",
+      "inputs": ["earth_resistance_ohm"],
+      "expected": 10,
+      "severity": "critical",
+      "references": { "tcvn": "TCVN 9385:2012", "page": 32, "section": "5.4.5" }
+    },
+    {
+      "code": "LT005",
+      "version": "1.0",
+      "statement_vi": "Day xuong (down conductor) toi thieu 2 day",
+      "statement_en": "At least 2 down conductors required",
+      "formula": "num_down_conductors >= 2",
+      "inputs": ["num_down_conductors"],
+      "expected": 2,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 9385:2012", "page": 25, "section": "5.3.1" }
+    },
+    {
+      "code": "LT006",
+      "version": "1.0",
+      "statement_vi": "Tiet dien day xuong dong >=50mm2",
+      "statement_en": "Down conductor copper cross-section >=50mm2",
+      "formula": "down_conductor_section >= 50",
+      "inputs": ["down_conductor_section_mm2"],
+      "expected": 50,
+      "severity": "error",
+      "references": { "tcvn": "TCVN 9385:2012", "page": 26, "section": "5.3.3" }
+    }
+  ]
+}
